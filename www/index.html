@@ -34,16 +34,38 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <title>Cordova Tester</title>
+
     </head>
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
+    <br/>
+        <button id="callBtn">Call method</button>
+
+        <select id="method">
+            <option value="login">login</option>
+            <option value="logout">logout</option>
+            <option value="accounts.getAccountInfo">accounts.getAccountInfo</option>
+            <option value="accounts.screenSet">accounts.screenSet</option>
+            <option value="comments.commentsUI">comments.commentsUI</option>
+            <option value="socialize.addConnection">socialize.addConnection</option>
+            <option value="socialize.addEventHandlers">socialize.addEventHandlers</option>
+            <option value="socialize.checkin">socialize.checkin</option>
+            <option value="socialize.deleteAccount">socialize.deleteAccount</option>
+            <option value="socialize.delUserSettings">socialize.delUserSettings</option>
+            <option value="socialize.facebookGraphOperation">socialize.facebookGraphOperation</option>
+            <option value="socialize.getAlbums">socialize.getAlbums</option>
+            <option value="socialize.getAvailableProviders">socialize.getAvailableProviders</option>
+            <option value="socialize.getContacts">socialize.getContacts</option>
+
+        </select>
+
+        <br/>
+        Params:
+        <br/>
+        <textarea rows="10" cols="40" id="params"></textarea>
+        <textarea rows="30" cols="120" id="txtres">log</textarea>
+
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+
     </body>
 </html>
